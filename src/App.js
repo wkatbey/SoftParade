@@ -8,6 +8,17 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Grid from '@material-ui/core/Grid';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 
+function ActionLink(name){
+    function handleClick(e){
+        e.preventDefault();
+        alert("You are trying to reach " + name + "!");
+    }
+    return(
+      <Button onClick={handleClick}>
+        {name}
+      </Button>
+    )
+}
 function App() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -37,10 +48,17 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
         <Grid item>
+<<<<<<< HEAD
             <ButtonGroup color= "primary" aria-label="Outlined primary button group">
                 <Button>Aaron R</Button>
                 <Button>Wassim K</Button>
                 <Button>Aaron Z</Button>
+=======
+            <ButtonGroup color="primary" aria-label="Outlined primary button group">
+                {ActionLink("Aaron R")}
+                {ActionLink("Wassim K")}
+                {ActionLink("Aaron Z")}            
+>>>>>>> 4fa38eb133039f23022277e46928876c22a1c407
             </ButtonGroup>
         </Grid>
         </p>
@@ -52,6 +70,7 @@ function App() {
         >
           Why don't you try educating yourself, loser?
         </a>
+        {ActionLink("hello")}
       </header>
     </div>
   );
