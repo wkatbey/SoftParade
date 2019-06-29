@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 function App() {
   return (
@@ -8,7 +10,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <button class="mdc-button">Learn More</button>
+        <Button variant="contained" color="primary">
+        Default
+        </Button>
         </p>
         <a
           className="App-link"
