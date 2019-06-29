@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 function App() {
   return (
@@ -10,9 +12,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-        <Button variant="contained" color="primary">
-        Default
-        </Button>
+        <Grid item>
+            <ButtonGroup color="primary" aria-label="Outlined primary button group">
+                <Button>Aaron R</Button>
+                <Button>Wassim</Button>
+                <Button>Aaron Z</Button>
+            </ButtonGroup>
+        </Grid>
         </p>
         <a
           className="App-link"
