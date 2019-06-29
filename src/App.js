@@ -48,17 +48,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
         <Grid item>
-<<<<<<< HEAD
-            <ButtonGroup color= "primary" aria-label="Outlined primary button group">
-                <Button>Aaron R</Button>
-                <Button>Wassim K</Button>
-                <Button>Aaron Z</Button>
-=======
             <ButtonGroup color="primary" aria-label="Outlined primary button group">
                 {ActionLink("Aaron R")}
                 {ActionLink("Wassim K")}
-                {ActionLink("Aaron Z")}            
->>>>>>> 4fa38eb133039f23022277e46928876c22a1c407
+                {ActionLink("Aaron Z")}
             </ButtonGroup>
         </Grid>
         </p>
