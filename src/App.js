@@ -9,6 +9,17 @@ import Grid from '@material-ui/core/Grid';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import SpMenu from './sp-menu/SpMenu'
 
+function ActionLink(name){
+    function handleClick(e){
+        e.preventDefault();
+        alert("You are trying to reach " + name + "!");
+    }
+    return(
+      <Button onClick={handleClick}>
+        {name}
+      </Button>
+    )
+}
 function App() {
   return (
     <div className="App">
@@ -19,9 +30,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Grid item>
             <ButtonGroup color="primary" aria-label="Outlined primary button group">
-                <Button>Aaron R</Button>
-                <Button>Wassim</Button>
-                <Button>Aaron Z</Button>
+                {ActionLink("Aaron R")}
+                {ActionLink("Wassim K")}
+                {ActionLink("Aaron Z")}            
             </ButtonGroup>
         </Grid>
         <a
@@ -32,6 +43,7 @@ function App() {
         >
           Why don't you try educating yourself, loser?
         </a>
+        {ActionLink("hello")}
       </header>
     </div>
   );
