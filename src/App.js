@@ -7,38 +7,16 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Grid from '@material-ui/core/Grid';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
+import SpMenu from './sp-menu/SpMenu'
 
 function App() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  function handleClick(event) {
-    setAnchorEl(event.currentTarget);
-  }
-
-  function handleClose() {
-    setAnchorEl(null);
-  }
-
   return (
     <div className="App">
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-        Open Menu
-      </Button>
-      <Menu
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}>
-
-        <MenuItem>Profile</MenuItem>
-        <MenuItem>My account</MenuItem>
-        <MenuItem>Logout</MenuItem>
-      </Menu>
+      <br/>
+      <SpMenu></SpMenu>
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        <Button variant="contained" color="primary">
-          Default
-        </Button>
         <Grid item>
             <ButtonGroup color="primary" aria-label="Outlined primary button group">
                 <Button>Aaron R</Button>
@@ -46,7 +24,6 @@ function App() {
                 <Button>Aaron Z</Button>
             </ButtonGroup>
         </Grid>
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
