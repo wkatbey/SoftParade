@@ -15,7 +15,7 @@ function App() {
         <Grid item>
             <ButtonGroup color="primary" aria-label="Outlined primary button group">
                 <Button>Aaron R</Button>
-                <Button>Wassim</Button>
+                <Button>Wassim K</Button>
                 <Button>Aaron Z</Button>
             </ButtonGroup>
         </Grid>
