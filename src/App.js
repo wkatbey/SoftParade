@@ -36,11 +36,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-        <Button variant="contained" color="primary">
-          Default
-        </Button>
         <Grid item>
-            <ButtonGroup color="primary" aria-label="Outlined primary button group">
+            <ButtonGroup color= "primary" aria-label="Outlined primary button group">
                 <Button>Aaron R</Button>
                 <Button>Wassim K</Button>
                 <Button>Aaron Z</Button>
